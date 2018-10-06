@@ -141,15 +141,11 @@
 
 		&-img-wrap {
 			position: relative;
-			width: 54%;
-			height: 95%;
-			padding-top: 4rem;
 		}
 
 		&-img--gepard {
 			position: relative;
 			display: block;
-			width: 90%;
 			text-align: center;
 
 			& img {
@@ -160,7 +156,7 @@
 
 		&-text-wrap {
 			position: relative;
-			height: 90%;
+			// height: 60%;
 			// margin-top: 3rem;
 			margin: 3rem;
 			border: 25px solid #fff;
@@ -185,24 +181,24 @@
 		&-title {
 			font: {
 				family: 'Intro';
-				size: 6rem;
+				size: 4rem;
 			}
 			margin-top: 0;
-			margin-bottom: 3rem;
+			// margin-bottom: 3rem;
 			line-height: 1;
 		}
 
 		&-text {
 			font: {
 				family: 'Avanti';
-				size: 3rem;
+				size: 1.6rem;
 			}
 			line-height: 1;
 
 			&--marked {
-				font-size: 4rem;
+				font-size: 2rem;
 				line-height: .8;
-				// padding: 4rem 0;
+				padding: 1.5rem 0;
 			}
 		}
 

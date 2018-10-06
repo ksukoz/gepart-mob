@@ -333,21 +333,16 @@ body {
       animation-timing-function: ease-out;
       backface-visibility: hidden; }
   .mob .about-img-wrap {
-    position: relative;
-    width: 54%;
-    height: 95%;
-    padding-top: 4rem; }
+    position: relative; }
   .mob .about-img--gepard {
     position: relative;
     display: block;
-    width: 90%;
     text-align: center; }
     .mob .about-img--gepard img {
       width: 70%;
       text-align: center; }
   .mob .about-text-wrap {
     position: relative;
-    height: 90%;
     margin: 3rem;
     border: 25px solid #fff;
     border-image: url("../img/about-border.png") 30 round round; }
@@ -364,17 +359,17 @@ body {
       opacity: 0.1; }
   .mob .about-title {
     font-family: 'Intro';
-    font-size: 6rem;
+    font-size: 4rem;
     margin-top: 0;
-    margin-bottom: 3rem;
     line-height: 1; }
   .mob .about-text {
     font-family: 'Avanti';
-    font-size: 3rem;
+    font-size: 1.6rem;
     line-height: 1; }
     .mob .about-text--marked {
-      font-size: 4rem;
-      line-height: .8; }
+      font-size: 2rem;
+      line-height: .8;
+      padding: 1.5rem 0; }
   .mob .about-typography {
     display: flex;
     flex-direction: column;
