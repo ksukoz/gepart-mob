@@ -1,10 +1,28 @@
-.main-header {
-	position: absolute;
-	top: 0;
-	width: 100%;
-	// height: 100px;
-	// z-index: 2;
-	overflow: auto;
-	transition: all 700ms ease;
-	// overflow-y: hidden;
+.mob {
+	.main-header {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		overflow: auto;
+		transition: all 700ms ease;
+
+		.button-wrap {
+			position: relative;
+			display: flex;
+			justify-content: flex-end;
+			background-color: $color-black;
+			z-index: 2;
+			margin-bottom: -1px;
+		}
+
+		.navigation-toggle {
+			color: $color-white;
+			background-color: $color-black;
+			border: none;
+			font-size: 4rem;
+			padding: 1rem;
+			line-height: .9;
+			outline: none;
+		}
+	}
 }

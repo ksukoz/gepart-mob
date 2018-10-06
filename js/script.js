@@ -1,10 +1,15 @@
 var pageHeight = window.innerHeight;
 var isAnimating = false;
 var main = document.querySelector('.main');
-
+var toggle = document.querySelector('.navigation-toggle');
+var navigation = document.querySelector('.navigation');
 var scrollLinks = document.querySelectorAll('.navigation-link');
 
 main.style.transform = 'translate3d(0px,0px,0px)';
+
+toggle.addEventListener('click', function(e) {
+	navigation.classList.toggle('open');
+});
 
 scrollLinks.forEach(function(link, i) {
 	link.addEventListener('click', function(e) {
