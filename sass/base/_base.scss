@@ -1,0 +1,34 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	// font-size: 56.25%; //9px
+	font-size: 56%; //8px
+
+	// @include respond(tab-land) {
+	// 	font-size: 50%; //8px
+	// }
+
+	@include respond(tab-port) {
+		font-size: 56%; //8px
+	}
+
+	@include respond(big-desktop) {
+		font-size: 62.5%; //10px
+	}
+}
+
+body {
+	position: relative;
+	box-sizing: border-box;
+	height: 100vh;
+	transform: translate3d(0px, 0px, 0px);
+	transition: all 700ms ease;
+	overflow-y: hidden;
+	scroll-behavior: smooth;
+}

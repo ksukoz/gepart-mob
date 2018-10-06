@@ -1,0 +1,62 @@
+@font-face {
+	font-family: 'B52';
+	src: url('../fonts/B52.eot');
+	src: url('../fonts/B52.eot?#iefix') format('embedded-opentype'), url('../fonts/B52.woff2') format('woff2'),
+		url('../fonts/B52.woff') format('woff'), url('../fonts/B52.ttf') format('truetype'),
+		url('../fonts/B52.svg#B52') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Perfect DOS VGA 437 Win';
+	src: url('../fonts/PerfectDOSVGA437Win.eot');
+	src: url('../fonts/PerfectDOSVGA437Win.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/PerfectDOSVGA437Win.woff2') format('woff2'),
+		url('../fonts/PerfectDOSVGA437Win.woff') format('woff'),
+		url('../fonts/PerfectDOSVGA437Win.ttf') format('truetype'),
+		url('../fonts/PerfectDOSVGA437Win.svg#PerfectDOSVGA437Win') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Besom 2';
+	src: url('../fonts/Besom.eot');
+	src: url('../fonts/Besom.eot?#iefix') format('embedded-opentype'), url('../fonts/Besom.woff2') format('woff2'),
+		url('../fonts/Besom.woff') format('woff'), url('../fonts/Besom.ttf') format('truetype'),
+		url('../fonts/Besom.svg#Besom') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Avanti';
+	src: url('../fonts/Avanti.eot');
+	src: url('../fonts/Avanti.eot?#iefix') format('embedded-opentype'), url('../fonts/Avanti.woff2') format('woff2'),
+		url('../fonts/Avanti.woff') format('woff'), url('../fonts/Avanti.ttf') format('truetype'),
+		url('../fonts/Avanti.svg#Avanti') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Pixel Cyr';
+	src: url('../fonts/PixelCyr-Normal.eot');
+	src: url('../fonts/PixelCyr-Normal.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/PixelCyr-Normal.woff2') format('woff2'), url('../fonts/PixelCyr-Normal.woff') format('woff'),
+		url('../fonts/PixelCyr-Normal.ttf') format('truetype'),
+		url('../fonts/PixelCyr-Normal.svg#PixelCyr-Normal') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Intro';
+	src: url('../fonts/Intro.eot');
+	src: url('../fonts/Intro.eot?#iefix') format('embedded-opentype'), url('../fonts/Intro.woff2') format('woff2'),
+		url('../fonts/Intro.woff') format('woff'), url('../fonts/Intro.ttf') format('truetype'),
+		url('../fonts/Intro.svg#Intro') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

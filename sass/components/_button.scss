@@ -1,0 +1,40 @@
+.btn {
+	&,
+	&:link,
+	&:visited {
+		display: inline-block;
+		padding: .5rem 1.5rem;
+		text: {
+			transform: uppercase;
+			decoration: none;
+			align: center;
+		}
+		transition: .2s;
+		background-color: #d5d5d5;
+		max-width: 150px;
+		font: {
+			family: 'Perfect DOS VGA 437 Win';
+			size: 2rem;
+		}
+		border: none;
+		cursor: pointer;
+		color: #000082;
+	}
+
+	&:hover {
+		transform: translateY(-3px);
+		box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+
+		&::after {
+			transform: scaleX(1.2) scaleY(1.4);
+			opacity: 0;
+		}
+	}
+
+	&:active,
+	&:focus {
+		transform: translateY(-1px);
+		box-shadow: 0 .5rem 1rem rgba($color-black, 0.2);
+		outline: none;
+	}
+}

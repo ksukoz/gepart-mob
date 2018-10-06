@@ -1,0 +1,13 @@
+.main-footer {
+	color: $color-white;
+	background-color: $color-black;
+	padding: 2rem 0;
+	font-size: 1.4rem;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+
+	&-wrap {
+		@include container;
+	}
+}
