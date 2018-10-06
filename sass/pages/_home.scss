@@ -141,6 +141,7 @@
 
 		&-img-wrap {
 			position: relative;
+			height: 35%;
 		}
 
 		&-img--gepard {
@@ -148,8 +149,11 @@
 			display: block;
 			text-align: center;
 
+			height: 100%;
+
 			& img {
-				width: 70%;
+				height: 100%;
+				width: auto;
 				text-align: center;
 			}
 		}
@@ -370,8 +374,7 @@
 		height: 100vh;
 
 		&-wrap {
-			@include container;
-			padding-top: 150px;
+			padding: 5.5rem 3rem;
 			&.animate {
 				animation-name: moveInRight;
 				animation-duration: 1s;
@@ -381,13 +384,11 @@
 		}
 
 		&-right {
-			width: 40%;
-			height: 70vh;
-			margin-left: auto;
 			border: 10px solid #fff200;
 		}
 
 		&-title {
+			margin-top: -1px;
 			background-color: #fff200;
 			color: transparent;
 			text: {
@@ -398,7 +399,7 @@
 			span {
 				font: {
 					family: 'Intro';
-					size: 9rem;
+					size: 5rem;
 				}
 				color: #231f20;
 			}
@@ -409,6 +410,7 @@
 			flex-direction: column;
 			justify-content: space-between;
 			height: 65%;
+			background: rgba(0, 0, 0, 0.7);
 		}
 
 		&-list {
@@ -420,7 +422,7 @@
 		&-item {
 			font: {
 				family: 'Avanti';
-				size: 3rem;
+				size: 1.6rem;
 			}
 			line-height: 1;
 		}
@@ -429,7 +431,7 @@
 			text-align: center;
 			font: {
 				family: 'Avanti';
-				size: 3rem;
+				size: 1.6rem;
 			}
 			color: $color-white;
 		}
@@ -437,7 +439,7 @@
 
 	.web {
 		background: {
-			image: url('../img/web--bg.png');
+			image: url('../img/web-bg-mob.png');
 			position: 50%;
 			size: cover;
 		}
@@ -445,8 +447,7 @@
 		height: 100vh;
 
 		&-wrap {
-			@include container;
-			padding-top: 100px;
+			padding: 5.5rem 3rem;
 
 			&.animate {
 				animation-name: moveInLeft;
@@ -459,27 +460,30 @@
 		&-right {
 			display: flex;
 			flex-direction: column;
-			width: 30%;
-			margin-left: auto;
 		}
 
 		&-title {
 			font: {
 				family: 'Pixel Cyr';
-				size: 8rem;
+				size: 5rem;
 			}
 		}
 
 		&-list {
+			margin-left: auto;
 			list-style: none;
 			color: #6a400e;
-			margin-bottom: 3rem;
+			margin-bottom: 1.6rem;
+
+			&:last-child {
+				color: $color-black;
+			}
 		}
 
 		&-item {
 			font: {
 				family: 'Pixel Cyr';
-				size: 3rem;
+				size: 1.6rem;
 			}
 			line-height: 1.5;
 		}
@@ -500,10 +504,9 @@
 		}
 
 		&-content {
-			@include container;
 			display: flex;
 			flex-direction: column;
-			padding-top: 110px;
+			padding: 6.5rem .5rem;
 
 			.btn {
 				align-self: center;
@@ -548,10 +551,6 @@
 				margin-bottom: 1rem;
 				padding: 1rem;
 				resize: none;
-			}
-
-			.btn {
-				align-self: flex-end;
 			}
 		}
 	}
