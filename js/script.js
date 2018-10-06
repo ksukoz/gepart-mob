@@ -4,6 +4,7 @@ var main = document.querySelector('.main');
 var toggle = document.querySelector('.navigation-toggle');
 var navigation = document.querySelector('.navigation');
 var scrollLinks = document.querySelectorAll('.navigation-link');
+var y = 0;
 
 main.style.transform = 'translate3d(0px,0px,0px)';
 
@@ -29,14 +30,17 @@ scrollLinks.forEach(function(link, i) {
 	});
 });
 
-document.addEventListener('scroll', function(e) {
+document.addEventListener('touchmove', function(e) {
 	main.scrollTop = 0;
 });
-document.addEventListener('wheel', wheelListener);
+
+document.addEventListener('touchstart', function(e) {
+	y = e.touches[0].pageY;
+});
+document.addEventListener('touchmove', wheelListener);
 
 function wheelListener(e) {
-	e.preventDefault();
-	if (e.deltaY > 0) {
+	if (y - e.touches[0].pageY > 0) {
 		scrollPage(-pageHeight);
 	} else {
 		scrollPage(+pageHeight);
@@ -60,8 +64,6 @@ function scrollPage(scrollSize) {
 			link.classList.remove('active');
 		}
 	});
-
-	console.log(yPos);
 
 	main.style.transform = 'translate3d(0px,' + yPos + ',0px)';
 }

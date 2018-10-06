@@ -28,11 +28,10 @@
 			}
 
 			&::before {
-				width: 55%;
+				width: 100%;
 				height: 100%;
 				background: {
-					image: url('../img/main--gepart.png');
-					position: 99%;
+					image: url('../img/main-bg-mob.png');
 					size: cover;
 				}
 			}
@@ -43,20 +42,20 @@
 				width: 30%;
 				height: 20%;
 				background: {
-					image: url('../img/main--dots.png');
+					image: url('../img/main-dots-mob.png');
 					size: cover;
 				}
 			}
 		}
 		&-main {
 			&-container {
-				@include container;
 				display: flex;
 				flex-direction: column;
-				justify-content: flex-end;
+				justify-content: space-between;
 				align-items: flex-end;
 				height: 65vh;
-				margin-top: 13vh;
+				margin-top: 5.5rem;
+				padding: 0 1rem;
 
 				@include respond(big-desktop) {
 					margin-top: 10vh;
@@ -65,10 +64,11 @@
 
 			&-title {
 				position: relative;
-				padding: 12rem 0;
+				padding-top: 10rem;
+				padding-bottom: 5rem;
 				font: {
 					family: 'Intro';
-					size: 4.5rem;
+					size: 3rem;
 				}
 				line-height: 1;
 				text-transform: uppercase;
@@ -76,31 +76,22 @@
 				writing-mode: vertical-rl;
 				transform: rotate(180deg);
 
-				@include respond(big-desktop) {
-					padding: 13rem 0;
-					font-size: 5.5rem;
-				}
-
 				&::before {
 					content: '\25B2\25B2\25B2';
 					position: absolute;
-					bottom: 1.5rem;
-					right: 3rem;
-					font-size: 5rem;
-					letter-spacing: -15px;
-
-					@include respond(big-desktop) {
-						bottom: -1.5rem;
-					}
+					top: 50%;
+					left: 7rem;
+					font-size: 1.5rem;
+					letter-spacing: -5px;
 				}
 			}
 
 			&-dots {
 				position: absolute;
-				left: -0.5rem;
+				left: 0.5rem;
 				top: -0.5rem;
-				letter-spacing: -15px;
-				font-size: 4rem;
+				letter-spacing: -5px;
+				font-size: 1.6rem;
 
 				&--orange {
 					color: $color-secondary;
@@ -120,16 +111,6 @@
 					size: 3rem;
 				}
 				line-height: 1;
-
-				&::before {
-					content: '';
-					position: absolute;
-					top: 4.3rem;
-					left: calc(7rem - 270px);
-					width: 270px;
-					height: 10px;
-					background-color: $color-black;
-				}
 			}
 		}
 	}
@@ -144,12 +125,11 @@
 		height: 100vh;
 
 		&-wrap {
-			@include container;
-
 			display: flex;
+			flex-direction: column;
 			justify-content: space-between;
 			height: 100%;
-			padding-top: calc(100px + 5rem);
+			padding-top: 5.5rem;
 
 			&.animate {
 				animation-name: moveInLeft;
@@ -164,17 +144,6 @@
 			width: 54%;
 			height: 95%;
 			padding-top: 4rem;
-
-			// &::before {
-			// 	content: '';
-			// 	position: absolute;
-			// 	top: 0;
-			// 	right: 40%;
-			// 	width: 200px;
-			// 	height: 100px;
-			// 	background: url('../img/waves--1.png') no-repeat;
-			// 	z-index: 2;
-			// }
 		}
 
 		&-img--gepard {
@@ -186,129 +155,26 @@
 			& img {
 				width: 70%;
 				text-align: center;
-
-				@include respond(big-desktop) {
-					width: 100%;
-				}
-			}
-		}
-
-		&-img--cat {
-			position: absolute;
-
-			top: 55%;
-
-			@include respond(big-desktop) {
-				top: 50%;
-			}
-
-			& img {
-				width: 70%;
-
-				@include respond(big-desktop) {
-					width: 100%;
-				}
-			}
-		}
-
-		&-img-text {
-			position: relative;
-			display: flex;
-			flex-direction: column;
-			align-items: flex-end;
-			font: {
-				family: 'Besom 2';
-				size: 4.7rem;
-			}
-			line-height: 1;
-		}
-
-		&-img--ready {
-			position: relative;
-			padding-right: 30%;
-			transform: rotate(-10deg) translate(0, -8rem);
-
-			@include respond(big-desktop) {
-				padding-right: 23%;
-				transform: rotate(-10deg) translate(0, -4rem);
-			}
-
-			& span {
-				padding-left: 10rem;
-			}
-
-			&::before,
-			&::after {
-				content: '';
-				position: absolute;
-			}
-
-			&::before {
-				top: -120px;
-				left: 5rem;
-				width: 35px;
-				height: 100px;
-				background: url('../img/arrow--1.png') no-repeat;
-				transform: rotate(10deg);
-			}
-
-			&::after {
-				width: 200px;
-				height: 85px;
-				left: 0;
-				bottom: -7rem;
-				background: url(../img/waves--1.png) no-repeat;
-				transform: rotate(35deg);
-			}
-		}
-
-		&-img--mockup {
-			position: relative;
-			padding-right: 30%;
-			transform: translate(0, 0);
-
-			@include respond(big-desktop) {
-				padding-right: 10%;
-				transform: translate(0, 9rem);
-			}
-
-			& span {
-				padding-left: 5rem;
-			}
-
-			&::before,
-			&::after {
-				content: '';
-				position: absolute;
-			}
-
-			&::before {
-				top: -40px;
-				left: -80px;
-				width: 250px;
-				height: 100px;
-				background: url('../img/arrow--2.png') no-repeat;
-				transform: rotate(10deg);
 			}
 		}
 
 		&-text-wrap {
 			position: relative;
-			width: 46%;
 			height: 90%;
-			margin-top: 3rem;
+			// margin-top: 3rem;
+			margin: 3rem;
 			border: 25px solid #fff;
 			border-image: url('../img/about-border.png') 30 round round;
 
 			&::before {
 				content: 'О нас';
 				position: absolute;
-				left: -50%;
-				top: -3rem;
+				right: -50%;
+				top: -1rem;
 				width: 150%;
 				font: {
 					family: 'Intro';
-					size: 17rem;
+					size: 9rem;
 				}
 				text-transform: uppercase;
 				line-height: 0;
