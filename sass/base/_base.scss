@@ -26,9 +26,7 @@ html {
 body {
 	position: relative;
 	box-sizing: border-box;
-	height: 100vh;
-	transform: translate3d(0px, 0px, 0px);
-	transition: all 700ms ease;
-	overflow-y: hidden;
+	min-height: 100vh;
+	width: 100vw;
 	scroll-behavior: smooth;
 }

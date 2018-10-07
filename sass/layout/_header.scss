@@ -1,9 +1,10 @@
 .mob {
 	.main-header {
-		position: absolute;
+		position: -webkit-sticky;
+		position: sticky;
 		top: 0;
+		z-index: 2;
 		width: 100%;
-		overflow: auto;
 		transition: all 700ms ease;
 
 		.button-wrap {

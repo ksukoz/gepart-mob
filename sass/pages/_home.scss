@@ -2,8 +2,10 @@
 	.main {
 		transform: translate3d(0px, 0px, 0px);
 		transition: all 700ms ease;
-		overflow-y: hidden;
+		overflow-y: scroll;
+		overflow-x: hidden;
 		scroll-behavior: smooth;
+		margin-top: -5.5rem;
 	}
 
 	.home {
@@ -490,6 +492,7 @@
 	}
 
 	.contacts {
+		position: relative;
 		background: #000082;
 		width: 100vw;
 		height: 100vh;

@@ -1,6 +1,7 @@
 .mob {
 	.navigation {
-		position: relative;
+		position: absolute;
+		width: 100%;
 		display: none;
 
 		&.open {
